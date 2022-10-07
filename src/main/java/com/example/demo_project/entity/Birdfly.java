@@ -36,13 +36,6 @@ public class Birdfly implements Active{
 		// TODO Auto-generated method stub	
 	}
 	*/
-
-	@Override
-	public Bird printBirdAttributes(String name, int age) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 //	@Override
 //	public Bird printBirdAttributes(String name, int age) {
 //		// TODO Auto-generated method stub

@@ -29,8 +29,10 @@ class DemoProjectApplicationTests {
 	private Active active;
 	@Test
 	void contextLoads1() {
-		Bird bir = active.getBirdInfo("SSS",2);
-		System.out.println(bir);
+//		active.getBirdInfo("SSS", 2);
+		active.printBirdAttributes(active.getBirdInfo("SSS", 2));
+//		Bird bir = active.getBirdInfo("SSS",2);
+//		System.out.println(bir);
 //		active.printBirdAttributes(bir);
 	}
 

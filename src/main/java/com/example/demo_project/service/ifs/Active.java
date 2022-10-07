@@ -9,6 +9,6 @@ public interface Active {
 //	public void fly(int age);
 
 	public Bird getBirdInfo(String name, int age);
-	public Bird printBirdAttributes(String name, int age);
+	public void printBirdAttributes(Bird bird);
 
 }
