@@ -6,8 +6,6 @@ import com.example.demo_project.service.ifs.Active;
 
 @Service
 public class Birdfly implements Active{
-
-	
 	@Override
 	public Bird getBirdInfo(String name,int age) {
 		Bird bird = new Bird();
@@ -15,9 +13,7 @@ public class Birdfly implements Active{
 		bird.setName(name);
 		bird.setAge(age);
 		return bird;
-
 	}
-	
 	public void printBirdAttributes(Bird bird) {
 		System.out.println(bird.getName());
 		System.out.println(bird.getAge());
