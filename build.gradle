@@ -23,6 +23,15 @@ dependencies {
 	implementation 'io.springfox:springfox-swagger2:2.9.2'
 //	implementation 'io.springfox:springfox-swagger-ui:3.0.0'
 	
+	//AOP
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
+	
+	//Thymeleaf 
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	
+	//starter security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

@@ -116,14 +116,32 @@ public class RegisterServiceImpl implements RegisterService{
 	}
 	
 
-	@Scheduled(fixedRateString = "${heartbeat.ms}")	// @Scheduled要去取值,fixedRateString找到配置檔裡的字串
-	public void scheduledPrintDate(){
-		System.out.println(new Date());
-	}
+//	@Scheduled(fixedRateString = "${heartbeat.ms}")	// @Scheduled要去取值,fixedRateString找到配置檔裡的字串
+//	public void scheduledPrintDate(){
+//		System.out.println(new Date());
+//	}
 
 //	@Scheduled(cron = "0/5 * * * * *")
 //	public void scheduledPrintDate1() {
 //		System.out.println(new Date());
 //	}
+	
+	@Override
+	public Register findById(String id) {
+		Optional<Register> op = registerDao.findById(id);
+//		if(op.isPresent()) {
+//			return op.get();
+//		}
+//		return null;
+		return op.orElse(null);
+	}
+
+	@Override
+	public List<Register> findAll() {
+		//不允許除數為0
+//		int a = 5/0;
+		System.out.println("!!!!!!!");
+		return registerDao.findAll();
+	}
 
 }

@@ -15,8 +15,6 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -358,6 +356,22 @@ public class RegisterTest {
 		Date date = Date.from(zonedDateTime.toInstant());
 		System.out.println("Date: " + date);
 		System.out.println("LocalDate: " + localDate);
+	}
+	
+	@Test
+	public void controllerTest() {
+		double random = Math.random()*10000;
+		int verifyCode = (int) Math.round(random);
+		System.out.println(random);
+		System.out.println(verifyCode);
+	}
+	
+	@Test
+	public void findAll() {
+		//before
+		List<Register> result = registerService.findAll();
+		//after
+		System.out.println(result.size());
 	}
 
 }
